@@ -66,6 +66,7 @@ Install & configure your desired master node with options:
 
 ```bash
 ./install.sh -p bitmoney
+./install.sh -p galilel
 ```
 
 ## Examples for typical script invocation
@@ -76,6 +77,8 @@ These are only a couple of examples for typical setups. Check my [easy step-by-s
 
 ```bash
 ./install.sh -p bitmoney -c 4
+./install.sh -p galilel -c 4 -n 6
+
 ```
 
 **Update daemon of previously installed BITMONEY masternodes:**

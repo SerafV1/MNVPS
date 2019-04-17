@@ -10,7 +10,7 @@ If this script helped you in any way, please contribute some feedback. BTC donat
 
 ```
 NODEMASTER BTC DONATIONS  33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3
-CRYPTVENTURE BTC DONATIONS 3FQSjittAYZj9im7dCywUZDjqMXHF6Xr2j
+Seraf BTC DONATIONS 3QeyxTvNbk3k6JnFLbuFgRSUQ7L7Ypb7JT
 ```
 
 
@@ -24,7 +24,7 @@ The ever growing list of supported projects is now maintained at [https://nodema
 However in addition to the officially listed projects, this version also supports:
 
 BitMoney (V2 / Phoenix Project)
-
+Galilel
 ---
 
 **NOTE on the VPS choice for starters**

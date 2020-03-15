@@ -1,7 +1,7 @@
 #!/bin/bash 
 # snapshot
 cd src
-wget https://github.com/MobilePayCoin/MobilePayCoin/releases/download/v1.6.0.0/mcpc_blocks_531198.zip
+https://github.com/MobilePayCoin/MobilePayCoin/releases/download/v1.6.0.0/mcpc_blocks_647885.zip
 unzip mcpc_blocks_531198.zip
 cd ..
 #

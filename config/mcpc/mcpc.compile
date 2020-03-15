@@ -1,13 +1,13 @@
 #!/bin/bash 
-# snapshot
-cd src
-https://github.com/MobilePayCoin/MobilePayCoin/releases/download/v1.6.0.0/mcpc_blocks_647885.zip
-unzip mcpc_blocks_647885.zip
-cd ..
-#
+
 chmod u+x share/genbuild.sh
 chmod u+x src/leveldb/build_detect_platform
 chmod u+x ./autogen.sh && ./autogen.sh
 ./configure --disable-dependency-tracking --enable-tests=no --without-gui --without-miniupnpc
 make
 make install
+
+cd src
+https://github.com/MobilePayCoin/MobilePayCoin/releases/download/v1.6.0.0/mcpc_blocks_647885.zip
+unzip mcpc_blocks_647885.zip
+cd ..

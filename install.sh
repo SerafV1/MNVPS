@@ -124,6 +124,7 @@ function install_packages() {
     pkg-config libgmp3-dev libevent-dev jp2a pv virtualenv libdb4.8-dev libdb4.8++-dev  &>> ${SCRIPT_LOGFILE}
     apt-get install jp2a
     apt-get install pv
+    apt-get install libtool
     # only for 18.04 // openssl
     if [[ "${VERSION_ID}" == "18.04" ]] && [[ "${VERSION_ID}" == "20.04" ]] ; then
        apt-get -qqy -o=Dpkg::Use-Pty=0 -o=Acquire::ForceIPv4=true install libssl1.0-dev

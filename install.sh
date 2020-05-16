@@ -121,10 +121,11 @@ function install_packages() {
     libcurl4-gnutls-dev protobuf-compiler libboost-all-dev autotools-dev automake \
     libboost-all-dev libssl-dev make autoconf libtool git apt-utils g++ \
     libprotobuf-dev pkg-config libudev-dev libqrencode-dev bsdmainutils \
-    pkg-config libgmp3-dev libevent-dev jp2a pv virtualenv libdb4.8-dev libdb4.8++-dev  
+    pkg-config libgmp3-dev libevent-dev jp2a pv virtualenv libdb4.8-dev libdb4.8++-dev \
+    apt-get install -y libzmq-dev &>> ${SCRIPT_LOGFILE}
     apt-get install jp2a
     apt-get install pv
-    apt-get install libtool &>> ${SCRIPT_LOGFILE}
+    apt-get install libtool 
     
     # only for 18.04 // openssl
     if [[ "${VERSION_ID}" == "18.04" ]] && [[ "${VERSION_ID}" == "20.04" ]] ; then

@@ -5,10 +5,10 @@
 #  ██║╚██╗██║██║   ██║██║  ██║██╔══╝  ██║╚██╔╝██║██╔══██║╚════██║   ██║   ██╔══╝  ██╔══██╗
 #  ██║ ╚████║╚██████╔╝██████╔╝███████╗██║ ╚═╝ ██║██║  ██║███████║   ██║   ███████╗██║  ██║
 #  ╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
-#                                                              ╚╗ @marsmensch 2016-2018 ╔╝
+#                                                              ╚╗ @marsmensch 2016-2018, @ seraf 2019-2020 ╔╝
 #
-# version 	v0.9.9
-# date    	2018-06-09
+# version 	v1.0.0
+# date    	2020-05-16
 #
 # function:	part of the masternode scripts, source the proper config file
 #
@@ -16,7 +16,7 @@
 #               Run this script w/ the desired parameters. Leave blank or use -h for help.
 #
 #	Platforms:
-#               - Linux Ubuntu 16.04 LTS ONLY on a Vultr, Hetzner or DigitalOcean VPS
+#               - Linux Ubuntu 16.04 and higher LTS ONLY on a Vultr, Hetzner or DigitalOcean VPS
 #               - Generic Ubuntu support will be added at a later point in time
 #
 # Twitter 	@marsmensch
@@ -26,7 +26,7 @@ declare -r CRYPTOS=`ls -l config/ | egrep '^d' | awk '{print $9}' | xargs echo -
 declare -r DATE_STAMP="$(date +%y-%m-%d-%s)"
 declare -r SCRIPTPATH="$(cd $(dirname ${BASH_SOURCE[0]}) > /dev/null; pwd -P)"
 declare -r MASTERPATH="$(dirname "${SCRIPTPATH}")"
-declare -r SCRIPT_VERSION="v0.9.9"
+declare -r SCRIPT_VERSION="v1.0.0"
 declare -r SCRIPT_LOGFILE="/tmp/nodemaster_${DATE_STAMP}_out.log"
 declare -r IPV4_DOC_LINK="https://www.vultr.com/docs/add-secondary-ipv4-address"
 declare -r DO_NET_CONF="/etc/network/interfaces.d/50-cloud-init.cfg"
@@ -41,11 +41,11 @@ cat << "EOF"
  ██║╚██╗██║██║   ██║██║  ██║██╔══╝  ██║╚██╔╝██║██╔══██║╚════██║   ██║   ██╔══╝  ██╔══██╗
  ██║ ╚████║╚██████╔╝██████╔╝███████╗██║ ╚═╝ ██║██║  ██║███████║   ██║   ███████╗██║  ██║
  ╚═╝  ╚═══╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
-                                                             ╚╗ @marsmensch 2016-2018 ╔╝
+                                                             ╚╗ @marsmensch 2016-2018, @seraf 2019-2020╔╝
 EOF
 echo "$(tput sgr0)$(tput setaf 3)Have fun, this is crypto after all!$(tput sgr0)"
-echo "$(tput setaf 6)Donations (BTC): 33ENWZ9RCYBG7nv6ac8KxBUSuQX64Hx3x3"
-echo "Questions: marsmensch@protonmail.com$(tput sgr0)"
+echo "$(tput setaf 6)Donations (BTC): 1PaVU7AZWPD5ULZZZpiMTMtftYcXRrWFPH"
+
 }
 
 # /*

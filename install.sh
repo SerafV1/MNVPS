@@ -114,6 +114,7 @@ function install_packages() {
     # development and build packages
     # these are common on all cryptos
     echo "* Package installation!"
+    sudo apt-get install autoconf
     add-apt-repository -yu ppa:bitcoin/bitcoin  &>> ${SCRIPT_LOGFILE}
     apt-get -qq -o=Dpkg::Use-Pty=0 -o=Acquire::ForceIPv4=true update  &>> ${SCRIPT_LOGFILE}
     apt-get -qqy -o=Dpkg::Use-Pty=0 -o=Acquire::ForceIPv4=true install build-essential \
